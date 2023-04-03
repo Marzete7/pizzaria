@@ -1,0 +1,202 @@
+/*resete css para tirar todas as margins dos elementos*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* Estilização do HEADER - Cabeçalho */
+
+.cabecalho
+{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cabecalho > img
+{
+    height: 60px;
+}
+
+.menu
+{
+    display: flex;
+}
+
+.menu > li
+{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu > li > a 
+{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;     /*essa tag muda a grossura da fonte*/
+}
+
+.menu > li:hover
+{
+    background-color: darkred;
+}
+
+.banner
+{
+    background-image: url(../img/pizza.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    box-shadow: 4px 4px 7px darkgreen;
+}
+
+.banner > h1
+{
+    text-shadow: 2px 2px black;
+}
+
+.banner > a
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.banner > a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+main
+{
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.h2-1
+{
+    color: green;
+    margin-top: 5px;
+   
+}
+
+.hr-1
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(245,6,6,1) 50%, rgba(255,0,0,0) 100%);
+    padding: 1px;
+    border: 0;
+    margin-top: 10px;
+}
+
+.sabores
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sabor
+{
+    background-color: green;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 2px 2px 4px greenyellow;
+    border-radius: 10px 10px 0px 0px;
+    
+    
+}
+
+.sabor > img
+{
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.saborpizza
+{ 
+    
+    color: white;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.preço
+{
+    align-items: center;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.promocoes
+{
+    display: flex;
+    overflow: scroll;
+    gap: 10px;
+}
+
+.promocoes::-webkit-scrollbar
+{
+    display: none
+}
+
+.rodape
+{
+    margin-top: 10px;
+    border-top: 2px;
+    border: solid black;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.rodape > p
+{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+.redesocial
+{
+    text-align: right;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) 
+{
+    .sabores
+    {
+        flex-direction: column;
+    }
+    .sabor
+    {
+        min-width: 100%;
+    }
+}
